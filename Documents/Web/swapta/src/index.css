@@ -1,0 +1,83 @@
+:root {
+  /* Brand Colors - Cebu Inspired (Blue-ish) */
+  --primary: #0077B6;
+  /* Ocean Blue */
+  --primary-hover: #023E8A;
+  --secondary: #00B4D8;
+  /* Lighter Blue / Teal */
+  --secondary-hover: #0096C7;
+  --accent: #FF5555;
+  /* Alert/Badge Red */
+
+  /* Neutral Colors */
+  --background: #F8F9FA;
+  --surface: #FFFFFF;
+  --surface-alt: #F0F2F5;
+  --text-main: #1A1A1A;
+  --text-muted: #666666;
+  --border: #E5E7EB;
+
+  /* Status Colors */
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --error: #EF4444;
+
+  /* Shadows & Effects */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --radius: 12px;
+  --transition: 0.2s ease-in-out;
+}
+
+/* Dark Mode - Manual Toggle */
+[data-theme='dark'] {
+  --background: #0F172A;
+  --surface: #1E293B;
+  --surface-alt: #334155;
+  --text-main: #F8FAFC;
+  --text-muted: #94A3B8;
+  --border: #334155;
+
+  /* Dark Mode specific overrides */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--background);
+  color: var(--text-main);
+  line-height: 1.5;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* Utilities */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hidden {
+  display: none;
+}

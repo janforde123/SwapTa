@@ -1,0 +1,128 @@
+.login-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    padding: 1rem;
+    z-index: 1;
+}
+
+.login-card {
+    background: var(--surface);
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.login-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.login-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.form-input {
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--background);
+    color: var(--text-main);
+    font-size: 1rem;
+    width: 100%;
+}
+
+.form-input::placeholder {
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
+.form-input:focus {
+    outline: 2px solid var(--primary);
+    border-color: transparent;
+}
+
+.text-link {
+    color: var(--text-main);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.text-link:hover {
+    color: var(--primary);
+}
+
+.login-footer {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: var(--text-main);
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    font-size: inherit;
+}
+
+.btn-link:hover {
+    color: var(--primary);
+}
+
+.terms-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.terms-group input[type="checkbox"] {
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.terms-group label {
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.terms-group .btn-link {
+    font-size: 0.85rem;
+    display: inline;
+}
