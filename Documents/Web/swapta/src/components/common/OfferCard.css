@@ -1,0 +1,110 @@
+.offer-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    width: 280px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 0.5rem;
+}
+
+.offer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.offer-label {
+    color: var(--text-muted);
+}
+
+.offer-status {
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: #eee;
+    color: #666;
+}
+
+.offer-status.accepted {
+    background: #DCFCE7;
+    color: #15803D;
+}
+
+.offer-status.declined {
+    background: #FEE2E2;
+    color: #991B1B;
+}
+
+.offer-item {
+    display: flex;
+    gap: 0.75rem;
+    background: var(--surface-alt);
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.offer-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    object-fit: cover;
+    background: #fff;
+}
+
+.offer-details h4 {
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.offer-details p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: 2px 0 0;
+}
+
+.offer-msg {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+}
+
+.offer-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.offer-actions button {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-decline {
+    background: white;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+}
+
+.btn-accept {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-decline:hover {
+    background: #FEE2E2;
+    color: #991B1B;
+    border-color: #FEE2E2;
+}
+
+.btn-accept:hover {
+    background: var(--primary-hover);
+}
