@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { supabase } from '../../lib/supabaseClient';
 import { Menu, X, User, MessageCircle, PlusCircle, Search, Moon, Sun } from 'lucide-react';
+import logo from '../../assets/logo.png';
 import './Layout.css';
 
 const Navbar = () => {
@@ -65,7 +66,10 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="container nav-content">
-                <Link to="/" className="logo">SwapTa!</Link>
+                <Link to="/" className="logo">
+                    <img src={logo} alt="SwapTa!" className="logo-img" />
+                    <span>SwapTa!</span>
+                </Link>
 
                 {/* Desktop Nav */}
                 <div className="nav-links desktop-only">

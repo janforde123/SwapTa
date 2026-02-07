@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import LegalModal from '../components/common/LegalModal';
+import logo from '../assets/logo.png';
 import '../styles/Login.css';
 
 const Login = ({ isSignUpDefault = false }) => {
@@ -60,6 +61,7 @@ const Login = ({ isSignUpDefault = false }) => {
         <div className="login-container">
             <div className="login-card">
                 <div className="login-header">
+                    <img src={logo} alt="SwapTa!" className="login-logo" />
                     <h1>SwapTa!</h1>
                     <p>{isLogin ? 'Welcome back to the community' : 'Join the growing Cebu exchange'}</p>
                 </div>
