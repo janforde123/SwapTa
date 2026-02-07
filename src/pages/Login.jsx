@@ -148,7 +148,7 @@ const Login = ({ isSignUpDefault = false }) => {
                 title="Terms of Service"
                 content={
                     <>
-                        <span className="policy-date">Effective Date: February 2026</span>
+                        <span className="policy-date">Effective Date: 2026</span>
                         <section className="policy-section">
                             <p>Welcome to SwapTa. By using our website or services, you agree to these Terms.</p>
                         </section>
@@ -197,7 +197,7 @@ const Login = ({ isSignUpDefault = false }) => {
                 title="Privacy Policy"
                 content={
                     <>
-                        <span className="policy-date">Effective Date: February 2026</span>
+                        <span className="policy-date">Effective Date: 2026</span>
                         <section className="policy-section">
                             <p>Your privacy matters to us. This policy explains how we collect and use your data.</p>
                         </section>
@@ -221,6 +221,10 @@ const Login = ({ isSignUpDefault = false }) => {
                         <section className="policy-section">
                             <h2>4. Data Security</h2>
                             <p>We take reasonable steps to protect your information, but no system is 100% secure.</p>
+                        </section>
+                        <section className="policy-section">
+                            <h2>5. Changes to This Policy</h2>
+                            <p>We may update this policy. Check it regularly for changes.</p>
                         </section>
                     </>
                 }
