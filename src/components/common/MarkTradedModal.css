@@ -1,0 +1,148 @@
+.mark-traded-modal .modal-overlay {
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.mark-traded-modal .modal-content {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    max-width: 450px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-2xl);
+}
+
+.mark-traded-modal .modal-header {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.mark-traded-modal .modal-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.mark-traded-modal .modal-body {
+    padding: 2rem;
+}
+
+.mark-traded-modal .description {
+    font-size: 1rem;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.mark-traded-modal .user-selection-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-height: 280px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Custom scrollbar */
+.mark-traded-modal .user-selection-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.mark-traded-modal .user-selection-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.mark-traded-modal .user-selection-list::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 10px;
+}
+
+.mark-traded-modal .user-candidate {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.875rem 1.25rem;
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.mark-traded-modal .user-candidate:hover {
+    border-color: var(--primary);
+    background: rgba(var(--primary-rgb), 0.05);
+    transform: translateX(4px);
+}
+
+.mark-traded-modal .user-candidate.selected {
+    background: rgba(var(--primary-rgb), 0.1);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 1px var(--primary);
+}
+
+.mark-traded-modal .avatar-sm,
+.mark-traded-modal .avatar-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+}
+
+.mark-traded-modal .username {
+    font-weight: 600;
+    color: var(--text-main);
+    flex: 1;
+}
+
+.mark-traded-modal .check-icon {
+    color: var(--primary);
+}
+
+.mark-traded-modal .form-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.mark-traded-modal textarea {
+    width: 100%;
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 0.75rem 1rem;
+    color: var(--text-main);
+    font-family: inherit;
+    font-size: 0.95rem;
+    resize: none;
+    transition: all 0.2s ease;
+}
+
+.mark-traded-modal textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: var(--surface);
+    box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.1);
+}
+
+.mark-traded-modal .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.mark-traded-modal .btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    min-width: 100px;
+}
